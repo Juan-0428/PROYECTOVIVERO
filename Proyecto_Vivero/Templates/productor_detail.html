@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalles del Productor</title>
+</head>
+<body>
+    <h1>Detalles del Productor</h1>
+    
+    {% if error_message %}
+        <p>{{ error_message }}</p>
+    {% else %}
+        <p><strong>Nombre:</strong> {{ productor.Nombre }}</p>
+        <p><strong>Apellido:</strong> {{ productor.Apellido }}</p>
+    {% endif %}
+</body>
+</html>
